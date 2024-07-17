@@ -1,9 +1,37 @@
+import Image from "next/image";
+import Link from "next/link"
+
+
 export default function Navbar(){
     return(
         <>
-        <div>
-            <div></div>
-            <div></div>
+        <div className="">
+            <div className="flex justify-around px-24 pt-8 pb-12 bg-[#175935]">
+                <Image 
+                    src=""
+                    width={100}
+                    height={100}
+                    alt="Logo Cooperativa"
+                />
+                <h1 className="text-white font-bold text-3xl">Cooperativa de Servicios Múltiples Alas Peruanas</h1>
+                <Link
+                    className="bg-[#F74E0F] py-1 px-8 text-white rounded-xl border border-white"
+                    href="http://190.12.83.18/portal/ConsulNet/default.aspx">
+                        Acceso a Socios
+                </Link>
+            </div>
+            <div className="bg-[#209F63]">
+                <ul className="flex pl-8 text-white text-sm">
+                    <Link className="py-3 px-4 hover:bg-[#0284c7]" href="/">Inicio</Link>
+                    <Link className="py-3 px-4 hover:bg-[#0284c7]" href="/servicios">Servicios</Link>
+                    <Link className="py-3 px-4 hover:bg-[#0284c7]" href="/beneficios">Beneficios</Link>
+                    <Link className="py-3 px-4 hover:bg-[#0284c7]" href="/convenios">Convenios</Link>
+                    <Link className="py-3 px-4 hover:bg-[#0284c7]" href="/nosotros">Nosotros</Link>
+                    <Link className="py-3 px-4 hover:bg-[#0284c7]" href="/asociado">Asociado</Link>
+                    <Link className="py-3 px-4 hover:bg-[#0284c7]" href="/comunicado">Comunicados</Link>
+                    <Link className="py-3 px-4 hover:bg-[#0284c7]" href="/contacto">Contacto</Link>
+                </ul>
+            </div>
         </div>
         </>
     );
