@@ -150,13 +150,14 @@ const NavContainer = styled.nav`
   .links.active{
     width: 100%;
     display: block;
-    position: absolute;
+    position: fixed;
     margin-left: auto;
     margin-right: auto;
-    top: 30%;
+    top: 0;
     left: 0;
     right: 0;
     text-align: center;
+    z-index: 1000;
     a{
       font-size: 2rem;
       margin-top: 1rem;
@@ -164,6 +165,7 @@ const NavContainer = styled.nav`
     }
   }
   .burguer{
+    z-index: 1100; /* Asegura que el botón esté por encima del navbar */
     @media(min-width: 1024px){
       display: none;
     }
@@ -172,12 +174,12 @@ const NavContainer = styled.nav`
 
 const BgDiv = styled.div`
   background-color: green;
-  position: absolute;
+  position: fixed;
   top: -1000px;
   left: -1000px;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 999;
   transition: all 1s ease;
 
   &.active {
