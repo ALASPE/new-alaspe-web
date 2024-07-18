@@ -64,28 +64,28 @@ export default function Navbar() {
           <div className="flex flex-row lg:hidden">
             <NavContainer>
               <div className={`links ${clicked ? "active" : ""}`}>
-                <Link onClick={handleClickMenu} className="py-3 px-5 hover:bg-[#0284c7]" href="/">
+                <Link onClick={handleClickMenu} className="py-3 px-5" href="/">
                   Inicio
                 </Link>
-                <Link onClick={handleClickMenu} className="py-3 px-5 hover:bg-[#0284c7]" href="/servicios">
+                <Link onClick={handleClickMenu} className="py-3 px-5" href="/servicios">
                   Servicios
                 </Link>
-                <Link onClick={handleClickMenu} className="py-3 px-5 hover:bg-[#0284c7]" href="/beneficios">
+                <Link onClick={handleClickMenu} className="py-3 px-5" href="/beneficios">
                   Beneficios
                 </Link>
-                <Link onClick={handleClickMenu} className="py-3 px-5 hover:bg-[#0284c7]" href="/convenios">
+                <Link onClick={handleClickMenu} className="py-3 px-5" href="/convenios">
                   Convenios
                 </Link>
-                <Link onClick={handleClickMenu} className="py-3 px-5 hover:bg-[#0284c7]" href="/nosotros">
+                <Link onClick={handleClickMenu} className="py-3 px-5" href="/nosotros">
                   Nosotros
                 </Link>
-                <Link onClick={handleClickMenu} className="py-3 px-5 hover:bg-[#0284c7]" href="/asociado">
+                <Link onClick={handleClickMenu} className="py-3 px-5" href="/asociado">
                   Asociado
                 </Link>
-                <Link onClick={handleClickMenu} className="py-3 px-5 hover:bg-[#0284c7]" href="/comunicado">
+                <Link onClick={handleClickMenu} className="py-3 px-5" href="/comunicado">
                   Comunicados
                 </Link>
-                <Link onClick={handleClickMenu} className="py-3 px-5 hover:bg-[#0284c7]" href="/contacto">
+                <Link onClick={handleClickMenu} className="py-3 px-5" href="/contacto">
                   Contacto
                 </Link>
               </div>
@@ -113,7 +113,7 @@ const NavContainer = styled.nav`
     }
   }
   padding: .4rem;
-  background-color: #333;
+  background-color: #209F63;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -127,10 +127,11 @@ const NavContainer = styled.nav`
     top: -700px;
     left: -2000px;
     right: 0;
+    margin-top:10%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    transition: all .5s ease;
+    transition: all 1s ease;
     a{
       color: white;
       font-size: 2rem;
@@ -159,8 +160,8 @@ const NavContainer = styled.nav`
     text-align: center;
     z-index: 1000;
     a{
-      font-size: 2rem;
-      margin-top: 1rem;
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
       color: white;
     }
   }
@@ -173,7 +174,7 @@ const NavContainer = styled.nav`
 `;
 
 const BgDiv = styled.div`
-  background-color: green;
+  background-color: #209F63;
   position: fixed;
   top: -1000px;
   left: -1000px;
