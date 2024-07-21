@@ -3,9 +3,11 @@ import NavBarItem from "../components/NavbarItem";
 export default function ServiciosNav() {
   return (
     <>
-      <h1 className="text-4xl font-bold text-black flex items-center justify-center m-10">Servicios</h1>
-      <div className="flex items-center justify-center">
-        <div className="grid grid-cols-5 grid-rows-2 gap-10 place-items-center max-w-xxl mx-auto">
+      <div className="flex flex-col justify-center items-center pt-5 gap-12 ">
+        <h1 className="text-4xl font-bold text-black flex items-center justify-center m-10">
+          Servicios
+        </h1>
+        <div className="grid grid-cols-2 grid-rows-3 lg:flex lg:flex-row gap-12">
           <NavBarItem
             href="/servicios/hospedaje"
             src="/hospedaje-logo.webp"
@@ -30,12 +32,14 @@ export default function ServiciosNav() {
             alt=""
             title="Curso Cooperativismo"
           />
+          <div className="lg:basis-1/5 col-span-2">
           <NavBarItem
             href="/servicios/prevision"
             src="/prevision-logo.webp"
             alt=""
             title="Previsión Social"
           />
+          </div>
         </div>
       </div>
     </>
