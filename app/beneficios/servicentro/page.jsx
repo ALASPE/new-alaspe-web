@@ -44,7 +44,7 @@ export default function ServicentroPage() {
               <li>- GNV - Gas natural</li>
             </ul>
           </div>
-          <Image src="/grifo2.jpg" height={400} width={450} alt="Grifo"/>
+          <Image src="/grifo2.jpg" height={400} width={450} alt="Grifo" />
         </div>
       </div>
     </>

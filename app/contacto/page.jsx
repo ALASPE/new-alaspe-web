@@ -1,7 +1,7 @@
-export default function ContactNav(){
-    return(
-        <>
-        <h1>Página del Navbar: Contacto</h1>
-        </>
-    )
+export default function ContactNav() {
+  return (
+    <>
+      <h1>Página del Navbar: Contacto</h1>
+    </>
+  );
 }
