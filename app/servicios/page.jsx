@@ -33,7 +33,7 @@ export default function ServiciosNav() {
             title="Curso Cooperativismo"
           />
           <NavBarItem
-            href="/servicios/prevision"
+            href="/servicios/prevision-social"
             src="/prevision-logo.webp"
             alt="Previsión Social logo"
             title="Previsión Social"

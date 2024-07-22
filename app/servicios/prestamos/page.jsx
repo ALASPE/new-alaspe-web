@@ -15,7 +15,7 @@ export default function PrestamosPage() {
         Prestamos
       </h1>
       <div className="flex items-center justify-center">
-        <div className="grid grid-cols-4 grid-rows-1 gap-10 place-items-center max-w-xxl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 place-items-center max-w-xxl mx-auto">
           {prestamosItems.map((item, index) => (
             <NavBarItem
               key={index}

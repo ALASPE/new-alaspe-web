@@ -5,7 +5,7 @@ export default function CursoPage() {
   return (
     <>
       <div className="flex flex-col items-center mt-10 w-full">
-        <h1 className="text-5xl font-bold text-black mb-10">
+        <h1 className="text-5xl font-bold text-black mb-10 text-center">
           Curso de cooperativismo
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mb-5 px-4">
@@ -36,94 +36,84 @@ export default function CursoPage() {
             ></iframe>
           </div>
 
-          <div className="flex items-center justify-top flex-col bg-white p-6 rounded-lg shadow-lg w-full">
-            <div className="flex items-center justify-top flex-col bg-white p-6 rounded-lg shadow-lg w-full mt-5">
-              <h2 className="text-2xl font-bold text-black mb-4">
-                Formas de pago
-              </h2>
+          <div className="flex flex-col items-start bg-white p-6 rounded-lg shadow-lg w-full">
+            <h2 className="text-2xl font-bold text-black mb-4 text-left">
+              Formas de pago
+            </h2>
+            <table className="w-full text-left border-collapse mb-5">
+              <thead>
+                <tr style={{ backgroundColor: "#175935", color: "white" }}>
+                  <th className="border-b-2 border-gray-200 px-4 py-2">
+                    Categoria
+                  </th>
+                  <th className="border-b-2 border-gray-200 px-4 py-2">
+                    Costo
+                  </th>
+                  <th className="border-b-2 border-gray-200 px-4 py-2">
+                    Modalidad
+                  </th>
+                  <th className="border-b-2 border-gray-200 px-4 py-2">
+                    Nro. de cuotas
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="odd:bg-[#209F63] even:bg-white text-black">
+                  <td className="border-b border-gray-200 px-4 py-2">Socios</td>
+                  <td className="border-b border-gray-200 px-4 py-2">S/. 45</td>
+                  <td className="border-b border-gray-200 px-4 py-2">Al crédito</td>
+                  <td className="border-b border-gray-200 px-4 py-2">
+                    3 cuotas de S/. 15
+                  </td>
+                </tr>
+                <tr className="odd:bg-[#209F63] even:bg-white text-black">
+                  <td className="border-b border-gray-200 px-4 py-2">
+                    Particulares
+                  </td>
+                  <td className="border-b border-gray-200 px-4 py-2">S/. 100</td>
+                  <td className="border-b border-gray-200 px-4 py-2">Al contado</td>
+                  <td className="border-b border-gray-200 px-4 py-2">
+                    Un solo pago
+                  </td>
+                </tr>
+              </tbody>
+            </table>
 
-              <table className="w-full text-left border-collapse mb-5">
-                <thead>
-                  <tr style={{ backgroundColor: "#175935", color: "white" }}>
-                    <th className="border-b-2 border-gray-200 px-4 py-2">
-                      Categoria
-                    </th>
-                    <th className="border-b-2 border-gray-200 px-4 py-2">
-                      Costo
-                    </th>
-                    <th className="border-b-2 border-gray-200 px-4 py-2">
-                      Modalidad
-                    </th>
-                    <th className="border-b-2 border-gray-200 px-4 py-2">
-                      Nro. de cuotas
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="odd:bg-[#209F63] even:bg-white text-black">
-                    <td className="border-b border-gray-200 px-4 py-2">
-                      Socios
-                    </td>
-                    <td className="border-b border-gray-200 px-4 py-2">
-                      S/. 45
-                    </td>
-                    <td className="border-b border-gray-200 px-4 py-2">
-                      Al crédito
-                    </td>
-                    <td className="border-b border-gray-200 px-4 py-2">
-                      3 cuotas de S/. 15
-                    </td>
-                  </tr>
-                  <tr className="odd:bg-[#209F63] even:bg-white text-black">
-                    <td className="border-b border-gray-200 px-4 py-2">
-                      Particulares
-                    </td>
-                    <td className="border-b border-gray-200 px-4 py-2">
-                      S/. 100
-                    </td>
-                    <td className="border-b border-gray-200 px-4 py-2">
-                      Al contado
-                    </td>
-                    <td className="border-b border-gray-200 px-4 py-2">
-                      Un solo pago
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <div className="grid grid-cols-1 md:grid-cols-1 gap-10 w-full mb-5 mt-5 bg-white p-6 rounded-lg shadow-lg">
-                <div>
-                  <h2 className="text-2xl font-bold text-black mb-4">
-                    Requisitos
-                  </h2>
-                  <ul className="list-disc pl-5 text-lg text-gray-700">
-                    <li>Ficha de inscripción</li>
-                    <li>Estado de cuentas corrientes (socios)</li>
-                    <li>DNI (Particulares)</li>
-                  </ul>
-                </div>
-                <div>
-                  <h2 className="text-2xl font-bold text-black mb-4">
-                    Informes y matricula
-                  </h2>
-                  <ul className="list-disc pl-5 text-lg text-gray-700">
-                    <li>Cooperativa de Servicios Múltiples Alas Peruanas</li>
-                    <li>Departamento de Educación</li>
-                    <li>Sra. Jesús Paredes – Celular 989142051</li>
-                    <li>Email educacion@alaspe.pe</li>
-                    <li>Jr. Pachacutec Nº 2052 – Jesús María</li>
-                    <li>Teléfonos : 471 5207 / 471-6022 / 471-7135 / Fax: 471-3364. (Anexos 105, 106)</li>
-                  </ul>
-                </div>
-              </div>
+            <div className="mt-5">
+              <h2 className="text-2xl font-bold text-black mb-4 text-left">
+                Requisitos
+              </h2>
+              <ul className="list-disc pl-5 text-lg text-gray-700">
+                <li>Ficha de inscripción</li>
+                <li>Estado de cuentas corrientes (socios)</li>
+                <li>DNI (Particulares)</li>
+              </ul>
+            </div>
+
+            <div className="mt-5">
+              <h2 className="text-2xl font-bold text-black mb-4 text-left">
+                Informes y matricula
+              </h2>
+              <ul className="list-disc pl-5 text-lg text-gray-700">
+                <li>Cooperativa de Servicios Múltiples Alas Peruanas</li>
+                <li>Departamento de Educación</li>
+                <li>Sra. Jesús Paredes – Celular 989142051</li>
+                <li>Email educacion@alaspe.pe</li>
+                <li>Jr. Pachacutec Nº 2052 – Jesús María</li>
+                <li>
+                  Teléfonos : 471 5207 / 471-6022 / 471-7135 / Fax: 471-3364.
+                  (Anexos 105, 106)
+                </li>
+              </ul>
             </div>
           </div>
         </div>
 
         <div className="w-full flex flex-col items-center mb-20">
-          <h2 className="text-3xl font-bold text-black mb-8 mt-10">
+          <h2 className="text-3xl font-bold text-black mb-8 mt-10 text-center">
             Otros Servicios
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 w-full px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 w-full px-4">
             <NavBarItem
               href="/servicios/prestamos"
               src="/prestamos-logo.webp"
