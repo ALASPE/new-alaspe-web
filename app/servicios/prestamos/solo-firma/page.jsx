@@ -54,13 +54,13 @@ const navBarItems = [
     title: "Promocional",
   },
   {
-    href: "/servicios/prestamos/campaña-escolar",
+    href: "/servicios/prestamos/campana-escolar",
     src: "/campaña-escolar-prestamos.jpeg",
     alt: "Campaña escolar",
     title: "Campaña escolar",
   },
   {
-    href: "/servicios/prestamos/campaña-fiestas-patrias",
+    href: "/servicios/prestamos/campana-fiestas-patrias",
     src: "/campaña-fiestas-patrias-prestamos.jpg",
     alt: "Campaña fiestas patrias",
     title: "Campaña fiestas patrias",
@@ -69,11 +69,11 @@ const navBarItems = [
 
 export default function SoloFirmaPage() {
   return (
-    <div className="flex flex-col items-center mt-10 w-full">
-      <h1 className="text-4xl font-bold text-black mb-10">
+    <div className="flex flex-col items-center mt-10 w-full px-2 md:px-4">
+      <h1 className="text-4xl font-bold text-black mb-10 text-center">
         Préstamos Solo Firma
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mb-5 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mb-5">
         <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg w-full">
           <Image
             src="/solofirma-prestamos.jpg"
@@ -110,10 +110,10 @@ export default function SoloFirmaPage() {
       </div>
 
       <div className="w-full flex flex-col items-center mb-20">
-        <h2 className="text-3xl font-bold text-black mb-8 mt-10">
+        <h2 className="text-3xl font-bold text-black mb-8 mt-10 text-center">
           Otros préstamos
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 w-full px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 w-full">
           {navBarItems.map((item, index) => (
             <NavBarItem
               key={index}

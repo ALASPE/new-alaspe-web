@@ -3,7 +3,7 @@ import NavBarItem from "@/app/components/NavbarItem";
 import PdfButton from "@/app/components/PdfButton";
 import { FaCheckCircle } from "react-icons/fa";
 
-const soloFirmaItems = [
+const ordinarioItems = [
   {
     href: "/pdf/ordinario/formato-ptmo-ordi-virtual-cpmp.pdf",
     text: "Préstamos a Ordinario - CAJA PENS. MILITAR POLICIAL",
@@ -64,10 +64,10 @@ const requirementsDelegado = [
 
 const navBarItems = [
   {
-    href: "/servicios/prestamos/ordinario",
-    src: "/ordinario-prestamos.jpg",
-    alt: "Ordinario",
-    title: "Ordinario",
+    href: "/servicios/prestamos/solo-firma",
+    src: "/solofirma-prestamos.jpg",
+    alt: "Solo Firma",
+    title: "Solo Firma",
   },
   {
     href: "/servicios/prestamos/promocional",
@@ -76,13 +76,13 @@ const navBarItems = [
     title: "Promocional",
   },
   {
-    href: "/servicios/prestamos/campaña-escolar",
+    href: "/servicios/prestamos/campana-escolar",
     src: "/campaña-escolar-prestamos.jpeg",
     alt: "Campaña escolar",
     title: "Campaña escolar",
   },
   {
-    href: "/servicios/prestamos/campaña-fiestas-patrias",
+    href: "/servicios/prestamos/campana-fiestas-patrias",
     src: "/campaña-fiestas-patrias-prestamos.jpg",
     alt: "Campaña fiestas patrias",
     title: "Campaña fiestas patrias",
@@ -91,18 +91,18 @@ const navBarItems = [
 
 export default function SoloFirmaPage() {
   return (
-    <div className="flex flex-col items-center mt-10 w-full">
-      <h1 className="text-4xl font-bold text-black mb-10">
+    <div className="flex flex-col items-center mt-10 w-full px-2 md:px-4">
+      <h1 className="text-4xl font-bold text-black mb-10 text-center">
         Préstamos Ordinario
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mb-5 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mb-5">
         <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg w-full">
           <Image
             src="/ordinario-prestamos.jpg"
             width={500}
             height={500}
-            alt="Curso cooperativismo"
+            alt="Prestamo ordinario"
             className="rounded-lg shadow-lg mb-4"
           />
           <p className="text-lg text-gray-700 mb-4 text-center">
@@ -127,8 +127,36 @@ export default function SoloFirmaPage() {
               </span>
             </li>
           </ul>
+          <table className="w-full text-left border-collapse mt-10 mb-5">
+            <thead>
+              <tr style={{ backgroundColor: "#175935", color: "white" }}>
+                <th className="border-b-2 border-gray-200 px-4 py-2">
+                  Monto en soles
+                </th>
+                <th className="border-b-2 border-gray-200 px-4 py-2">Número de garantes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="odd:bg-[#209F63] even:bg-white text-black">
+                <td className="border-b border-gray-200 px-4 py-2">Hasta S/. 3000</td>
+                <td className="border-b border-gray-200 px-4 py-2">1 garante</td>
+              </tr>
+              <tr className="odd:bg-[#209F63] even:bg-white text-black">
+                <td className="border-b border-gray-200 px-4 py-2">
+                  De S/. 3001 a S/. 6000
+                </td>
+                <td className="border-b border-gray-200 px-4 py-2">2 garantes</td>
+              </tr>
+              <tr className="odd:bg-[#209F63] even:bg-white text-black">
+                <td className="border-b border-gray-200 px-4 py-2">
+                  De S/. 6001 a más
+                </td>
+                <td className="border-b border-gray-200 px-4 py-2">3 garantes</td>
+              </tr>
+            </tbody>
+          </table>
           <div className="mt-4 w-full">
-            {soloFirmaItems.map((item, index) => (
+            {ordinarioItems.map((item, index) => (
               <PdfButton key={index} href={item.href} text={item.text} />
             ))}
           </div>
@@ -174,7 +202,7 @@ export default function SoloFirmaPage() {
       </div>
 
       <div className="w-full flex flex-col items-center mb-20">
-        <h2 className="text-3xl font-bold text-black mb-8 mt-10">
+        <h2 className="text-3xl font-bold text-black mb-8 mt-10 text-center">
           Otros préstamos
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 w-full px-4">
