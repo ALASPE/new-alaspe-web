@@ -321,28 +321,28 @@ const disposicionesGenerales = [
 
 const navBarItems = [
   {
-    href: "/servicios/prestamos/ordinario",
-    src: "/ordinario-prestamos.jpg",
-    alt: "Ordinario",
-    title: "Ordinario",
+    href: "/servicios/prestamos/",
+    src: "/prestamos-logo.webp",
+    alt: "Prestamos",
+    title: "Prestamos",
   },
   {
-    href: "/servicios/prestamos/promocional",
-    src: "/promocional-prestamos.jpg",
-    alt: "Promocional",
-    title: "Promocional",
+    href: "/servicios/merch",
+    src: "/merch-logo.webp",
+    alt: "Merchandising",
+    title: "Merchandising",
   },
   {
-    href: "/servicios/prestamos/solo-firma",
-    src: "/solofirma-prestamos.jpg",
-    alt: "Solo Firma",
-    title: "Solo Firma",
+    href: "/servicios/hospedaje",
+    src: "/hospedaje-logo.webp",
+    alt: "Hospedaje",
+    title: "Hospedaje",
   },
   {
-    href: "/servicios/prestamos/campana-fiestas-patrias",
-    src: "/campaña-fiestas-patrias-prestamos.jpg",
-    alt: "Campaña fiestas patrias",
-    title: "Campaña fiestas patrias",
+    href: "/servicios/curso-cooperativismo",
+    src: "/curso-logo.webp",
+    alt: "Curso cooperativismo",
+    title: "Curso cooperativismo",
   },
 ];
 
