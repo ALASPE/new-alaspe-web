@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -18,13 +19,13 @@ export default function SwiperCarousel() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="/slider/Slider1.svg" alt="Slide 1" />
+          <Image src="/slider/Slider1.svg" alt="Slide 1" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/slider/Slider2.svg" alt="Slide 2" />
+          <Image src="/slider/Slider2.svg" alt="Slide 2" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://via.placeholder.com/1920x600?text=Slide+3" alt="Slide 3" />
+          <Image src="https://via.placeholder.com/1920x600?text=Slide+3" alt="Slide 3" />
         </SwiperSlide>
       </Swiper>
     </div>

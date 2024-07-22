@@ -115,7 +115,7 @@ const Himno = [
         <p className="font-bold">I</p>
         <p>Liderazgo, educación y disciplina</p>
         <p>Es el lema de nuestra institución</p>
-        <p>Cooperativa "Alas Peruanas"</p>
+        <p>Cooperativa &quot;Alas Peruanas&quot;</p>
         <p>Fundada por Hombres de Honor</p>
         <br />
         <p className="font-bold">II</p>
@@ -137,18 +137,18 @@ const Himno = [
         <p>El gran legado que por siempre nos dejó</p>
         <br />
         <p className="font-bold">V</p>
-        <p>Cooperativa "Alas Peruanas"</p>
+        <p>Cooperativa &quot;Alas Peruanas&quot;</p>
         <p>Que acepta retos de cualquier magnitud</p>
         <p>En la toma de decisiones</p>
         <p>Que aseguran el control del capital</p>
         <br />
         <p className="font-bold">VI</p>
-        <p>Cooperativa "Alas Peruanas"</p>
+        <p>Cooperativa &quot;Alas Peruanas&quot;</p>
         <p>Por brindarles a tus socios bienestar</p>
         <p>Más allá de lo que un día soñaron</p>
         <p>Tú eres lider, cooperativo del Perú</p>
         <br />
-        <p>COOPERATIVA "ALAS PERUANAS"</p>
+        <p>COOPERATIVA &quot;ALAS PERUANAS&quot;</p>
         <p>Orgullo de nuestra nación</p>
       </div>
     ),
