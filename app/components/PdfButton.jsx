@@ -1,15 +1,19 @@
-import React from 'react';
+import React from "react";
+import Link from "next/link";
+import { FaFilePdf } from "react-icons/fa";
 
-const PdfButton = ({ pdf }) => {
+const PdfButton = ({ href, text }) => {
   return (
-    <a
-      href={pdf}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="mt-2 bg-green-600 text-white py-2 px-4 rounded"
-    >
-      Descargar PDF
-    </a>
+    <Link href={href} legacyBehavior>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-2 bg-red-600 text-white flex items-center py-2 px-4 rounded-lg shadow-lg hover:bg-red-700 transition duration-300"
+      >
+        <FaFilePdf className="mr-2" />
+        {text}
+      </a>
+    </Link>
   );
 };
 
