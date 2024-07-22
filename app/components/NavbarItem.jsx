@@ -14,7 +14,7 @@ export default function NavBarItem({ href, src, alt, title, text }) {
             height={250}
           />
         </div>
-        <div className="text-lg sm:text-xl font-medium text-black text-center">{title}</div>
+        <div className="text-base lg:text-lg font-medium text-black text-center">{title}</div>
       </div>
     </Link>
   );
