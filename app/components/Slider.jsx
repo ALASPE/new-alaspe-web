@@ -19,13 +19,13 @@ export default function SwiperCarousel() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Image src="/slider/Slider1.svg" alt="Slide 1" />
+          <Image href="/slider/Slider1.svg" alt="Slide 1" width={1920} height={300}/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/slider/Slider2.svg" alt="Slide 2" />
+          <Image href="/slider/Slider2.svg" alt="Slide 2" width={1920} height={300}/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="https://via.placeholder.com/1920x600?text=Slide+3" alt="Slide 3" />
+          <Image href="https://via.placeholder.com/1920x600?text=Slide+3" alt="Slide 3" width={1920} height={300}/>
         </SwiperSlide>
       </Swiper>
     </div>
