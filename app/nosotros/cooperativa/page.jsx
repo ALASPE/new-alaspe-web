@@ -108,7 +108,7 @@ const Medios = [
 
 const Himno = [
     {
-      title: "Himno",
+      title: "Letra de himno alaspe",
       content: (
         <div className="text-center text-lg text-gray-700 leading-relaxed">
         <h2 className="text-2xl font-bold text-green-800 mb-4">
@@ -196,10 +196,10 @@ export default function CooperativaPage() {
             src="/cooperativa-logo.jpg"
             width={500}
             height={500}
-            alt="Curso cooperativismo"
+            alt="Cooperativa Alaspe"
             className="rounded-lg shadow-lg mb-4"
           />
-          <p className="text-lg text-gray-700 mb-4 text-center">
+          <p className="text-lg text-gray-700 mb-4 text-justify">
             La Cooperativa de Servicios Múltiples Alas Peruanas fue fundada el
             14 de diciembre de 1968, por un grupo de entusiastas miembros de la
             Fuerza Aérea del Perú, somos una institución con 52 años de
