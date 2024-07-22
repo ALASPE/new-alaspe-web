@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <>
       <div className="w-full h-full static">
-        <div className="flex justify-around items-center px-12 pt-8 pb-12 bg-[#175935]">
+        <div className="flex justify-around items-center px-12 pt-5 pb-5 bg-[#175935]">
           <Image
             src="/logo_alaspe.png"
             width={100}

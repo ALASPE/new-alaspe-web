@@ -1,11 +1,11 @@
 import NavBarItem from "@/app/components/NavbarItem";
 
 const prestamosItems = [
-  { href: "/prestamos/solo-firma", image: "/solofirma-prestamos.jpg", text: "Sola Firma" },
-  { href: "/prestamos/ordinario", image: "/ordinario-prestamos.jpg", text: "Ordinario" },
-  { href: "/prestamos/promocional", image: "/promocional-prestamos.jpg", text: "Promocional" },
-  { href: "/prestamos/campaña-escolar", image: "/campaña-escolar-prestamos.jpeg", text: "Campaña escolar" },
-  { href: "/prestamos/campaña-fiestas-patrias", image: "/campaña-fiestas-patrias-prestamos.jpg", text: "Campaña fiestas patrias" },
+  { href: "/servicios/prestamos/solo-firma", image: "/solofirma-prestamos.jpg", text: "Sola Firma" },
+  { href: "/servicios/prestamos/ordinario", image: "/ordinario-prestamos.jpg", text: "Ordinario" },
+  { href: "/servicios/prestamos/promocional", image: "/promocional-prestamos.jpg", text: "Promocional" },
+  { href: "/servicios/prestamos/campaña-escolar", image: "/campaña-escolar-prestamos.jpeg", text: "Campaña escolar" },
+  { href: "/servicios/prestamos/campaña-fiestas-patrias", image: "/campaña-fiestas-patrias-prestamos.jpg", text: "Campaña fiestas patrias" },
 ];
 
 export default function PrestamosPage() {
