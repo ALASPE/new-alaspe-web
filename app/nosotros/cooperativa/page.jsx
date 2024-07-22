@@ -32,12 +32,10 @@ const Objetivos = [
           socios.
         </li>
         <li>
-          Implementar otros servicios accesorios accesorios y/o por acuerdo del
+          Implementar otros servicios accesorios y/o por acuerdo del
           Consejo de Administración o Asamblea General.
         </li>
-        <li>
-          Fomentar la creación de micro y pequeñas empresas entre sus socios.
-        </li>
+        <li>Fomentar la creación de micro y pequeñas empresas entre sus socios.</li>
         <li>
           Propiciar la integración entre los socios de la cooperativa con el
           sector cooperativo y la comunidad en general.
@@ -107,10 +105,10 @@ const Medios = [
 ];
 
 const Himno = [
-    {
-      title: "Letra de himno alaspe",
-      content: (
-        <div className="text-center text-lg text-gray-700 leading-relaxed">
+  {
+    title: "Letra de himno alaspe",
+    content: (
+      <div className="text-center text-lg text-gray-700 leading-relaxed">
         <h2 className="text-2xl font-bold text-green-800 mb-4">
           HIMNO COOPERATIVA ALAS PERUANAS
         </h2>
@@ -153,9 +151,9 @@ const Himno = [
         <p>COOPERATIVA "ALAS PERUANAS"</p>
         <p>Orgullo de nuestra nación</p>
       </div>
-      ),
-    },
-  ];
+    ),
+  },
+];
 
 const navBarItems = [
   {
@@ -260,17 +258,17 @@ export default function CooperativaPage() {
         </div>
 
         <div className="flex flex-col items-start bg-white p-6 rounded-lg shadow-lg w-full">
-        <AudioPlayer
+          <AudioPlayer
             src="/himno_alaspe.mp3"
             title="Himno Cooperativa Alas Peruanas"
           />
-        {Himno.map((section, index) => (
-              <Collapsible
-                key={index}
-                title={section.title}
-                content={section.content}
-              />
-            ))}
+          {Himno.map((section, index) => (
+            <Collapsible
+              key={index}
+              title={section.title}
+              content={section.content}
+            />
+          ))}
         </div>
       </div>
 
