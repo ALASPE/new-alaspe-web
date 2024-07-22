@@ -1,9 +1,14 @@
-import React from "react";
+import React from 'react';
+import Popup from './components/Popup';
+import SwiperCarousel from './components/Slider';
 
-export default function HomePage(){
-  return(
-    <div className="container mx-auto p-4">
-      <h1 className="text-5xl font-bold text-center mb-10">Bienvenido a Nuestro Sitio</h1>
-    </div>
-  )
+export default function HomePage() {
+  return (
+    <>
+      <div className="w-full max-w-auto relative">
+        <SwiperCarousel />
+        <Popup />
+      </div>
+    </>
+  );
 }
