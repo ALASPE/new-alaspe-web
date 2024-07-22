@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@react-google-maps/api": "^2.19.3",
+    "carousel": "^0.0.3",
+    "carrusel": "^1.2.3",
     "next": "14.2.5",
     "react": "^18",
+    "react-bootstrap": "^2.10.4",
     "react-dom": "^18",
     "react-icons": "^5.2.1",
     "react-responsive-carousel": "^3.2.23",

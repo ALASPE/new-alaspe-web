@@ -3,7 +3,7 @@ import ImgDesc from "@/app/components/ImgDesc";
 export default function OpticaPage() {
   return (
     <>
-      <ImgDesc image="/cruz_sur.jpg" desc="" h="300" w="300" >
+      <ImgDesc image="/optica.jpeg" desc="" h="700" w="700" >
         <div className="flex flex-col rounded-lg shadow-lg m-12 p-4 gap-12">
           <div>
             <h3 className="text-[#175935] text-xl font-bold">
