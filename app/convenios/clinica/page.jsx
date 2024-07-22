@@ -4,9 +4,9 @@ import PdfButton from "@/app/components/PdfButton";
 export default function ClinicaPage() {
   return (
     <>
-      <ImgDesc image="/anto_raimo.jpg" desc="Image" h="300" w="300">
+      <ImgDesc h="800" w="2400" image="/anto_raimo.jpg" desc="Image">
         <div className="flex flex-col gap-8">
-          <h3 className="text-[#175935] text-xl font-bold">
+          <h3 className="text-[#020403] text-xl font-bold">
             CLINICA ANTONIO RAIMONDI
           </h3>
           <p>

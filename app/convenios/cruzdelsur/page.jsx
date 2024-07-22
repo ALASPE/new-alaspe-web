@@ -4,7 +4,7 @@ import PdfButton from "@/app/components/PdfButton";
 export default function CruzdelSurPage() {
   return (
     <>
-      <ImgDesc image="/cruz_sur.jpg" desc="" h="300" w="300">
+      <ImgDesc image="/cruz_sur.jpg" desc="" h="600" w="1000">
         <div className="flex flex-col rounded-lg shadow-lg m-12 p-4 gap-12">
           <div>
             <h3 className="text-[#175935] text-xl font-bold">
