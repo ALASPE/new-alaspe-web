@@ -37,7 +37,6 @@ export default function ServiciosNav() {
             src="/prevision-logo.webp"
             alt="Previsión Social logo"
             title="Previsión Social"
-            className="col-span-1 sm:col-span-2 lg:col-span-1"
           />
         </div>
       </div>
