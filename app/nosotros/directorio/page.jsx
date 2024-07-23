@@ -1,4 +1,4 @@
-import NavBarItem from "@/app/components/NavBarItem";
+import NavBarItem from "@/app/components/NavbarItem";
 
 const consejoAdministracion = [
   {
