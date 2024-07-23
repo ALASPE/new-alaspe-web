@@ -23,12 +23,6 @@ export default function AsocNav() {
           alt="Admisión"
           title="Legislación"
           />
-      <NavBarItem
-          href="/asociado/transparencia"
-          src="/hospedaje-logo.webp"
-          alt="Admisión"
-          title="Transparencia"
-          />
       </PageComp>
     </>
   );
