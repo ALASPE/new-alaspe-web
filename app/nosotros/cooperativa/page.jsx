@@ -32,10 +32,12 @@ const Objetivos = [
           socios.
         </li>
         <li>
-          Implementar otros servicios accesorios y/o por acuerdo del
-          Consejo de Administración o Asamblea General.
+          Implementar otros servicios accesorios y/o por acuerdo del Consejo de
+          Administración o Asamblea General.
         </li>
-        <li>Fomentar la creación de micro y pequeñas empresas entre sus socios.</li>
+        <li>
+          Fomentar la creación de micro y pequeñas empresas entre sus socios.
+        </li>
         <li>
           Propiciar la integración entre los socios de la cooperativa con el
           sector cooperativo y la comunidad en general.
@@ -157,35 +159,29 @@ const Himno = [
 
 const navBarItems = [
   {
-    href: "/servicios/prestamos/",
+    href: "/nosotros/directorio",
     src: "/prestamos-logo.webp",
-    alt: "Prestamos",
-    title: "Prestamos",
+    alt: "Directorio",
+    title: "Directorio",
   },
   {
-    href: "/servicios/merch",
+    href: "/nosotros/gerencia",
     src: "/merch-logo.webp",
-    alt: "Merchandising",
-    title: "Merchandising",
+    alt: "Gerencia",
+    title: "Gerencia",
   },
   {
-    href: "/servicios/hospedaje",
+    href: "/nosotros/presidencia",
     src: "/hospedaje-logo.webp",
-    alt: "Hospedaje",
-    title: "Hospedaje",
-  },
-  {
-    href: "/servicios/curso-cooperativismo",
-    src: "/curso-logo.webp",
-    alt: "Curso cooperativismo",
-    title: "Curso cooperativismo",
+    alt: "Presidencia",
+    title: "Presidencia",
   },
 ];
 
 export default function CooperativaPage() {
   return (
     <div className="flex flex-col items-center mt-10 w-full px-2 md:px-4">
-      <h1 className="text-4xl font-bold text-black mb-10 text-center">
+      <h1 className="text-4xl font-bold text-green-700 mb-10 text-center">
         Cooperativa de Servicios Multiples Alas Peruanas
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mb-5">
@@ -195,33 +191,43 @@ export default function CooperativaPage() {
             width={500}
             height={500}
             alt="Cooperativa Alaspe"
-            className="rounded-lg shadow-lg mb-4"
+            className="rounded-lg shadow-lg mb-4 mx-auto"
           />
-          <p className="text-lg text-gray-700 mb-4 text-justify">
+          <p className="text-md text-gray-700 mt-4 mb-4 text-justify">
             La Cooperativa de Servicios Múltiples Alas Peruanas fue fundada el
             14 de diciembre de 1968, por un grupo de entusiastas miembros de la
             Fuerza Aérea del Perú, somos una institución con 52 años de
             servicio, brindando solidaridad y ayuda mutua a sus más de 33,000
-            asociados de nuestra Fuerza Armada a nivel nacional. La cooperativa
-            se constituyó con el tipo de ahorro y crédito el 14 de diciembre de
-            1968, fue reconocida oficialmente por Resolución Núm. 053-69
-            Instituto Nacional de Cooperativas INCOOP, el 11 de marzo de 1969 e
-            inscrita en Registros Públicos de Lima en el Tomo I, Asiento 1 Folio
-            429, se adecuó al Decreto Legislativo Núm. 085, obteniendo su
-            constancia de adecuación del INCOOP con fecha 7 de Julio de 1982,
-            quedando inscrita en el Tomo II, Asiento 5 fojas 531 del Libro de
-            Cooperativas de los Registros Públicos de Lima. En la Asamblea
-            General Extraordinaria realizada el 18 de diciembre de 1999 se
-            aprobó el cambio de tipo a Cooperativa de Servicios Especiales Alas
-            Peruanas, aclarada posteriormente mediante la Asamblea General
-            Extraordinaria celebrada el 18 de Marzo del 2000 e Inscrita en la
-            Partida Registral Núm. 11020420, del Registro de Personas Jurídicas.
+            asociados de nuestra Fuerza Armada a nivel nacional.
+            <br />
+            <br />
+            La cooperativa se constituyó con el tipo de ahorro y crédito el 14
+            de diciembre de 1968, fue reconocida oficialmente por Resolución
+            Núm. 053-69 Instituto Nacional de Cooperativas INCOOP, el 11 de
+            marzo de 1969 e inscrita en Registros Públicos de Lima en el Tomo I,
+            Asiento 1 Folio 429, se adecuó al Decreto Legislativo Núm. 085,
+            obteniendo su constancia de adecuación del INCOOP con fecha 7 de
+            Julio de 1982, quedando inscrita en el Tomo II, Asiento 5 fojas 531
+            del Libro de Cooperativas de los Registros Públicos de Lima.
+            <br />
+            <br />
+            En la Asamblea General Extraordinaria realizada el 18 de diciembre
+            de 1999 se aprobó el cambio de tipo a Cooperativa de Servicios
+            Especiales Alas Peruanas, aclarada posteriormente mediante la
+            Asamblea General Extraordinaria celebrada el 18 de Marzo del 2000 e
+            Inscrita en la Partida Registral Núm. 11020420, del Registro de
+            Personas Jurídicas.
+            <br />
+            <br />
             Posteriormente, conforme a la modificatoria según el acta de la
             Asamblea Extraordinaria celebrada el 26 de Setiembre del año 2009 se
             cambio el tipo a Cooperativa de Servicios Múltiples Alas Peruanas,
             que es la que tiene vigencia hasta la fecha.
           </p>
-          <h2 className="text-2xl font-bold text-black mb-4 text-left">
+        </div>
+
+        <div className="flex flex-col items-start bg-white p-6 rounded-lg shadow-lg w-full">
+          <h2 className="text-2xl font-bold text-green-700 mb-4 text-justify">
             Misión
           </h2>
           <p>
@@ -231,7 +237,7 @@ export default function CooperativaPage() {
             movimiento cooperativo nacional.
           </p>
 
-          <h2 className="text-2xl font-bold text-black mb-4 text-left">
+          <h2 className="text-2xl font-bold text-green-700 mt-4 mb-4 text-justify">
             Visión
           </h2>
           <p>
@@ -255,13 +261,36 @@ export default function CooperativaPage() {
               />
             ))}
           </div>
-        </div>
 
-        <div className="flex flex-col items-start bg-white p-6 rounded-lg shadow-lg w-full">
           <AudioPlayer
             src="/himno_alaspe.mp3"
             title="Himno Cooperativa Alas Peruanas"
           />
+          <div className="flex justify-center w-full mb-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center text-center">
+              <Image
+                src="/logo-marina.png"
+                width={150}
+                height={150}
+                alt="Cooperativa Alaspe"
+                className="rounded-lg mt-4 mb-4 mx-auto"
+              />
+              <Image
+                src="/logo-ejercito.png"
+                width={150}
+                height={150}
+                alt="Cooperativa Alaspe"
+                className="rounded-lg mt-4 mb-4 mx-auto"
+              />
+              <Image
+                src="/logo-fap.png"
+                width={150}
+                height={150}
+                alt="Cooperativa Alaspe"
+                className="rounded-lg mt-4 mb-4 mx-auto"
+              />
+            </div>
+          </div>
           {Himno.map((section, index) => (
             <Collapsible
               key={index}
@@ -273,8 +302,8 @@ export default function CooperativaPage() {
       </div>
 
       <div className="w-full flex flex-col items-center mb-20">
-        <h2 className="text-3xl font-bold text-black mb-8 mt-10 text-center">
-          Otros préstamos
+        <h2 className="text-3xl font-bold text-green-700 mb-8 mt-10 text-center">
+          Nosotros
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 w-full">
           {navBarItems.map((item, index) => (
