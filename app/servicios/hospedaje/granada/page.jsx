@@ -5,7 +5,7 @@ export default function HospedajePage() {
   return (
     <>
       <div className="flex flex-col items-center mt-10 w-full px-4">
-        <h1 className="text-5xl font-bold text-black mb-10 text-center">
+        <h1 className="text-4xl font-bold text-green-700 mb-10 text-center">
           Hospedaje Granada
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mb-5">
@@ -18,12 +18,12 @@ export default function HospedajePage() {
               className="rounded-lg shadow-lg"
             />
             <div className="mt-6 text-center w-full">
-              <p className="mt-4 text-lg text-gray-700 text-justify">
+              <p className="mt-4 text-md text-gray-700 text-justify">
                 El HOSPEDAJE GRANADA está ubicado muy próximo a la Plaza Mayor,
                 Palacio de Gobierno, Congreso de la República, ministerios,
                 iglesias, centros comerciales, lugares turísticos y culturales.
               </p>
-              <ul className="mt-4 text-lg text-gray-700 text-justify">
+              <ul className="mt-4 text-md text-gray-700 text-justify">
                 <li>
                   Dirección: <strong>Jr. Huancavelica Nº 323</strong> Lima –
                   Perú
@@ -44,49 +44,67 @@ export default function HospedajePage() {
           </div>
 
           <div className="flex flex-col items-start bg-white p-6 rounded-lg shadow-lg w-full">
-            <h2 className="text-2xl font-bold text-black mb-4 text-left">
+            <h2 className="text-xl font-bold text-green-700 mb-4 text-left">
               Precios de habitaciones
             </h2>
-            <table className="w-full text-left border-collapse mb-5">
-              <thead>
-                <tr style={{ backgroundColor: "#175935", color: "white" }}>
-                  <th className="border-b-2 border-gray-200 px-4 py-2">
-                    Habitaciones
-                  </th>
-                  <th className="border-b-2 border-gray-200 px-4 py-2">
-                    Particulares
-                  </th>
-                  <th className="border-b-2 border-gray-200 px-4 py-2">Socios</th>
-                  <th className="border-b-2 border-gray-200 px-4 py-2">
-                    Servicios
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="odd:bg-[#209F63] even:bg-white text-black">
-                  <td className="border-b border-gray-200 px-4 py-2">Matrimonial</td>
-                  <td className="border-b border-gray-200 px-4 py-2">S/. 60</td>
-                  <td className="border-b border-gray-200 px-4 py-2">S/. 50</td>
-                  <td className="border-b border-gray-200 px-4 py-2">
-                    Cama de dos plazas, baño privado, servicio de TV con cable y Wifi.
-                  </td>
-                </tr>
-                <tr className="odd:bg-[#209F63] even:bg-white text-black">
-                  <td className="border-b border-gray-200 px-4 py-2">Doble</td>
-                  <td className="border-b border-gray-200 px-4 py-2">S/. 90</td>
-                  <td className="border-b border-gray-200 px-4 py-2">S/. 80</td>
-                  <td className="border-b border-gray-200 px-4 py-2">
-                    Cama de dos plazas, cama de una plaza, baño privado, servicio de TV con cable y Wifi.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mb-5 mt-5 bg-white p-6 rounded-lg shadow-lg">
+            <div className="overflow-x-auto">
+              <table className="min-w-full bg-green-100 text-left border-collapse mt-5 mb-5">
+                <thead>
+                  <tr className="bg-green-700 text-white">
+                    <th className="border-b-2 border-gray-200 px-4 py-2">
+                      Habitaciones
+                    </th>
+                    <th className="border-b-2 border-gray-200 px-4 py-2">
+                      Particulares
+                    </th>
+                    <th className="border-b-2 border-gray-200 px-4 py-2">
+                      Socios
+                    </th>
+                    <th className="border-b-2 border-gray-200 px-4 py-2">
+                      Servicios
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="odd:bg-[#209F63] even:bg-white text-black">
+                    <td className="border-b border-gray-200 px-4 py-2">
+                      Matrimonial
+                    </td>
+                    <td className="border-b border-gray-200 px-4 py-2">
+                      S/. 60
+                    </td>
+                    <td className="border-b border-gray-200 px-4 py-2">
+                      S/. 50
+                    </td>
+                    <td className="border-b border-gray-200 px-4 py-2">
+                      Cama de dos plazas, baño privado, servicio de TV con cable
+                      y Wifi.
+                    </td>
+                  </tr>
+                  <tr className="odd:bg-[#209F63] even:bg-white text-black">
+                    <td className="border-b border-gray-200 px-4 py-2">
+                      Doble
+                    </td>
+                    <td className="border-b border-gray-200 px-4 py-2">
+                      S/. 90
+                    </td>
+                    <td className="border-b border-gray-200 px-4 py-2">
+                      S/. 80
+                    </td>
+                    <td className="border-b border-gray-200 px-4 py-2">
+                      Cama de dos plazas, cama de una plaza, baño privado,
+                      servicio de TV con cable y Wifi.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mt-5 bg-white p-6">
               <div>
-                <h2 className="text-2xl font-bold text-black mb-4 text-left">
+                <h2 className="text-xl font-bold text-green-700 mb-4 text-left">
                   Nuestras Habitaciones
                 </h2>
-                <ul className="list-disc pl-5 text-lg text-gray-700">
+                <ul className="list-disc pl-5 text-md text-gray-700">
                   <li>Habitaciones confortables</li>
                   <li>Tv. cable</li>
                   <li>Habitación matrimonial</li>
@@ -98,35 +116,46 @@ export default function HospedajePage() {
                 </ul>
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-black mb-4 text-left">
+                <h2 className="text-xl font-bold text-green-700 mb-4 text-left">
                   Servicios
                 </h2>
-                <ul className="list-disc pl-5 text-lg text-gray-700">
+                <ul className="list-disc pl-5 text-md text-gray-700">
                   <li>Hospedaje las 24 horas</li>
                   <li>Servicio de comedor</li>
                   <li>Sala de descanso</li>
                 </ul>
               </div>
             </div>
-            <div className="flex items-start justify-start flex-col bg-white p-6 rounded-lg shadow-lg w-full mt-5">
+            <div className="flex items-start justify-start flex-col bg-white p-6 rounded-lg w-full">
               <div className="mb-5">
-                <h2 className="text-2xl font-bold text-black mb-4 text-left">
+                <h2 className="text-xl font-bold text-green-700 mb-4 text-left">
                   Condiciones para Acogerse a la Tarifa Socio
                 </h2>
-                <ul className="list-disc pl-5 text-lg text-gray-700">
-                  <li>El socio debe estar al día en sus aportaciones y previsión social</li>
+                <ul className="list-disc pl-5 text-md text-gray-700">
+                  <li>
+                    El socio debe estar al día en sus aportaciones y previsión
+                    social
+                  </li>
                   <li>El socio no debe ser moroso</li>
                   <li>El beneficio es para el socio titular y conyuge</li>
                   <li>Deberá presentar su CIP y TIF respectivamente</li>
                   <li>Los precios incluyen IGV</li>
                   <li>Sujeto a disponibilidad</li>
-                  <li>Para las reservas deberá cancelar por anticipado y no es reembolsable</li>
+                  <li>
+                    Para las reservas deberá cancelar por anticipado y no es
+                    reembolsable
+                  </li>
                 </ul>
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-black mb-4 text-left">Nota</h2>
-                <ul className="list-disc pl-5 text-lg text-gray-700">
-                  <li>Los socios de la FFAA. deberán presentar su CIP y DNI (y dejar copia de ambos documentos).</li>
+                <h2 className="text-xl font-bold text-green-700 mb-4 text-left">
+                  Nota
+                </h2>
+                <ul className="list-disc pl-5 text-md text-gray-700">
+                  <li>
+                    Los socios de la FFAA. deberán presentar su CIP y DNI (y
+                    dejar copia de ambos documentos).
+                  </li>
                   <li>La cancelación del servicio será por adelantado</li>
                   <li>Nuestros precios incluyen IGV</li>
                   <li>El día hotelero termina a las 12:00 m.</li>

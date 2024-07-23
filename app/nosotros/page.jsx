@@ -26,6 +26,12 @@ export default function NosotrosNav() {
             alt="Presidencia"   
             title="Presidencia"
           />
+          <NavBarItem
+            href="/nosotros/gerencia"
+            src="/prestamos-logo.webp"
+            alt="Gerencia"   
+            title="Gerencia"
+          />
         </div>
       </div>
     </>
