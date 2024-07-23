@@ -4,7 +4,7 @@ export default function ServiciosNav() {
   return (
     <>
       <div className="flex flex-col justify-center items-center pt-5 gap-12">
-        <h1 className="text-4xl font-bold text-black flex items-center justify-center m-10">
+        <h1 className="text-4xl font-bold text-green-700 flex items-center justify-center mt-10">
           Servicios
         </h1>
         <div className="flex flex-wrap justify-center gap-12">
