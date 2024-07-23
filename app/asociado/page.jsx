@@ -5,24 +5,24 @@ export default function AsocNav() {
   return (
     <>
       <PageComp title="Asociados">
-      <NavBarItem
+        <NavBarItem
           href="/asociado/admision"
           src="/hospedaje-logo.webp"
           alt="Admisión"
           title="Requisitos para Afiliación"
-          />
-      <NavBarItem
+        />
+        <NavBarItem
           href="/asociado/tramites"
           src="/hospedaje-logo.webp"
           alt="Admisión"
           title="Trámites"
-          />
-      <NavBarItem
+        />
+        <NavBarItem
           href="/asociado/legislacion"
           src="/hospedaje-logo.webp"
           alt="Admisión"
           title="Legislación"
-          />
+        />
       </PageComp>
     </>
   );

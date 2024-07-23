@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
       <div className="bg-[#0F333E] text-white text-sm flex flex-col justify-center items-center gap-4 pb-5 mt-28">
-        <div className="flex flex-col lg:flex-row gap-10 lg:gap-24 align-center justify-center w-full">
+        <div className="flex flex-wrap flex-row gap-10 lg:gap-24 align-center justify-center w-full">
           <FooterItem title="Instituciones de Interes">
             <ul className="flex gap-3 flex-col">
               <Link href="https://www.gob.pe/marina/">

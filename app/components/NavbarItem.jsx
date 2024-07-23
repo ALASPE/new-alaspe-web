@@ -6,7 +6,7 @@ export default function NavBarItem({ href, src, alt, title, text }) {
     <Link href={href}>
       <div className="p-4 sm:p-6 max-w-xs sm:max-w-sm mx-auto bg-white rounded-xl shadow-lg flex flex-col items-center space-y-4">
         <div className="shrink-0">
-          <div className="relative w-48 h-48">
+          <div className="relative w-56 h-56">
             <Image
               className="object-contain"
               src={src}

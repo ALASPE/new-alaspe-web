@@ -1,10 +1,12 @@
 import Image from "next/image";
+import PageComp from "../components/PageComp";
 
 export default function ContactNav() {
   return (
     <>
+   
       <div>
-        <h1>Página del Navbar: Contacto</h1>
+        <h1 className="text-3xl lg:text-4xl font-bold text-green-700 flex items-center justify-center m-10">Contacto</h1>
         <div className="flex flex-col lg:flex-row m-8 p-4 gap-8 rounded-lg shadow-lg">
           <div>
             <Image src="/contacto.png" height={900} width={1200} alt="holi" />
