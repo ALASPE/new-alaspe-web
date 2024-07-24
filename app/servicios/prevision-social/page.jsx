@@ -385,7 +385,7 @@ export default function PrevSocPage() {
         </div>
 
         <div className="flex flex-col items-start bg-white p-6 rounded-lg shadow-lg w-full">
-          <h2 className="text-2xl font-bold text-black mb-4 text-left">
+          <h2 className="text-2xl font-bold text-green-700 mb-4 text-left">
             Requisitos
           </h2>
           {requisitosData.map((section, index) => (
@@ -404,7 +404,7 @@ export default function PrevSocPage() {
             />
           ))}
 
-          <h2 className="text-2xl font-bold text-black mb-4 text-left">
+          <h2 className="text-2xl font-bold text-green-700 mb-4 text-left">
             Documentos a presentar
           </h2>
           {fallecimientoSocio.map((section, index) => (
@@ -430,7 +430,7 @@ export default function PrevSocPage() {
               content={section.content}
             />
           ))}
-          <h2 className="text-2xl font-bold text-black mb-4 text-left">
+          <h2 className="text-2xl font-bold text-green-700 mb-4 text-left">
             Otras consideraciones
           </h2>
           {condonacionPrestamo.map((section, index) => (
