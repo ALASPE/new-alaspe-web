@@ -1,6 +1,7 @@
 import Image from "next/image";
 import NavBarItem from "@/app/components/NavbarItem";
 import PdfButton from "@/app/components/PdfButton";
+import PageComp from "@/app/components/PageComp";
 import { FaCheckCircle } from "react-icons/fa";
 
 const campanaItems = [
@@ -68,10 +69,7 @@ const navBarItems = [
 
 export default function SoloFirmaPage() {
   return (
-    <div className="flex flex-col items-center mt-10 w-full px-2 md:px-4">
-      <h1 className="text-4xl font-bold text-black mb-10 text-center">
-        Préstamos Campaña fiestas patrias
-      </h1>
+    <PageComp title="Préstamos Campaña fiestas patrias">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mb-5">
         <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg w-full">
           <Image
@@ -127,6 +125,6 @@ export default function SoloFirmaPage() {
           ))}
         </div>
       </div>
-    </div>
+    </PageComp>
   );
 }
