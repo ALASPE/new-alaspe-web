@@ -116,7 +116,7 @@ export default function SoloFirmaPage() {
             alt="Prestamo promocional"
             className="rounded-lg shadow-lg mb-4"
           />
-          <p className="text-md text-gray-700 mb-4 text-justify">
+          <p className="text-md text-gray-700 mt-4 mb-4 text-justify">
             Ofrecemos préstamos para aquellas personas que desean inscribirse
             como socios en nuestra cooperativa. Estos préstamos son permanentes
             para los nuevos socios que ingresan a la cooperativa y se ofrecen
