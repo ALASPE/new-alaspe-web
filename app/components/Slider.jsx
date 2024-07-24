@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 
-export default function SwiperCarousel({ images = [], w, h }) {
+export default function SwiperCarousel({ images, w, h }) {
   return (
     <div className="w-full relative z-10">
       <Swiper
