@@ -1,4 +1,5 @@
 import NavBarItem from "@/app/components/NavbarItem";
+import PageComp from "@/app/components/PageComp";
 
 const prestamosItems = [
   { href: "/servicios/prestamos/solo-firma", image: "/solofirma-prestamos.jpg", text: "Sola Firma" },
@@ -10,12 +11,7 @@ const prestamosItems = [
 
 export default function PrestamosPage() {
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-4xl font-bold text-black flex items-center justify-center m-10">
-        Prestamos
-      </h1>
-      <div className="flex items-center justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 place-items-center max-w-xxl mx-auto">
+     <PageComp title="Prestamos">
           {prestamosItems.map((item, index) => (
             <NavBarItem
               key={index}
@@ -24,8 +20,6 @@ export default function PrestamosPage() {
               title={item.text}
             />
           ))}
-        </div>
-      </div>
-    </div>
+    </PageComp>
   );
 }

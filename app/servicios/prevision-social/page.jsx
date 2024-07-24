@@ -2,6 +2,7 @@ import Image from "next/image";
 import NavBarItem from "@/app/components/NavbarItem";
 import PdfButton from "@/app/components/PdfButton";
 import Collapsible from "@/app/components/Desplegable";
+import PageComp from "@/app/components/PageComp";
 
 const previsionItems = [
   {
@@ -99,7 +100,9 @@ const montosFallecimiento = [
         <table className="min-w-full bg-green-100 text-left border-collapse mt-5 mb-5">
           <thead>
             <tr className="bg-green-700 text-white">
-              <th className="border-b-2 border-gray-200 px-4 py-2">Fallecimiento de</th>
+              <th className="border-b-2 border-gray-200 px-4 py-2">
+                Fallecimiento de
+              </th>
               <th className="border-b-2 border-gray-200 px-4 py-2">Subsidio</th>
             </tr>
           </thead>
@@ -113,11 +116,15 @@ const montosFallecimiento = [
               <td className="border-b border-gray-200 px-4 py-2">S/ 5500</td>
             </tr>
             <tr className="odd:bg-[#209F63] even:bg-green-50 text-black">
-              <td className="border-b border-gray-200 px-4 py-2">Hijos menores de 18 años</td>
+              <td className="border-b border-gray-200 px-4 py-2">
+                Hijos menores de 18 años
+              </td>
               <td className="border-b border-gray-200 px-4 py-2">S/ 5500</td>
             </tr>
             <tr className="odd:bg-[#209F63] even:bg-green-50 text-black">
-              <td className="border-b border-gray-200 px-4 py-2">Padres del socio</td>
+              <td className="border-b border-gray-200 px-4 py-2">
+                Padres del socio
+              </td>
               <td className="border-b border-gray-200 px-4 py-2">S/ 2750</td>
             </tr>
           </tbody>
@@ -348,10 +355,7 @@ const navBarItems = [
 
 export default function PrevSocPage() {
   return (
-    <div className="flex flex-col items-center mt-10 w-full px-2 md:px-4">
-      <h1 className="text-4xl font-bold text-black mb-10 text-center">
-        Previsión Social
-      </h1>
+    <PageComp title="Previsión Social">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mb-5">
         <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg w-full">
           <Image
@@ -361,7 +365,7 @@ export default function PrevSocPage() {
             alt="Curso cooperativismo"
             className="rounded-lg shadow-lg mb-4"
           />
-          <p className="text-lg text-gray-700 mb-4 text-center">
+          <p className="text-md text-gray-700 mt-4 mb-4 text-justify">
             La Cooperativa Alas Peruanas establece, el sistema de Previsión
             Social autofinanciado dentro del marco de bienestar social
             cooperativo. El servicio de Previsión Social por fallecimiento, se
@@ -471,6 +475,6 @@ export default function PrevSocPage() {
           ))}
         </div>
       </div>
-    </div>
+    </PageComp>
   );
 }
