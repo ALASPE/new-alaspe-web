@@ -117,7 +117,7 @@ export default function Navbar() {
                   Contacto
                 </Link>
                 <Link
-                  className="bg-[#F74E0F] py-1 px-8 text-white rounded-xl border border-white text-1xs ml-4"
+                  className="py-3 px-5 text-1xs"
                   href="http://190.12.83.18/portal/ConsulNet/default.aspx"
                 >
                   Acceso a Socios
