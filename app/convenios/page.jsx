@@ -6,6 +6,18 @@ export default function ConveniosNav() {
     <>
       <PageComp title="Convenios">
         <NavBarItem
+          href="/convenios/medica"
+          src="/hospedaje-logo.webp"
+          alt="Actividades logo"
+          title="Asistencia Médica"
+        />
+        <NavBarItem
+          href="/convenios/telef"
+          src="/hospedaje-logo.webp"
+          alt="Actividades logo"
+          title="Orientación Telefónica"
+        />
+        <NavBarItem
           href="/convenios/clinica"
           src="/hospedaje-logo.webp"
           alt="Actividades logo"
