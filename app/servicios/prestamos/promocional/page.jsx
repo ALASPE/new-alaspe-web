@@ -1,6 +1,8 @@
 import Image from "next/image";
 import NavBarItem from "@/app/components/NavbarItem";
 import PdfButton from "@/app/components/PdfButton";
+import PageComp from "@/app/components/PageComp";
+import Collapsible from "@/app/components/Desplegable";
 import { FaCheckCircle } from "react-icons/fa";
 
 const promocionalItems = [
@@ -27,20 +29,53 @@ const promocionalItems = [
 ];
 
 const requirementsSocio = [
-  "Llenar la solicitud de ficha de ingreso",
-  "Adjuntar copia fotostática del carné de identidad y el DNI (debidamente firmado en la copia).",
-  "Llenar solicitud de préstamo adjuntado los siguientes documentos:",
-  "Adjuntar las dos (2) últimas liquidaciones de haberes del socio prestatario con firma y huella para verificar la liquidez.",
-  "Adjuntar copia del recibo cancelado de luz, agua o teléfono para verificar que los datos consignados coincidan con la solicitud y el pagaré.",
-  "Adjuntar fotocopia del carné de identidad personal (CIP) y DNI del socio prestatario.",
-  "Tener una cuenta de banco a tu nombre.",
-  "Tener correo electrónico.",
-  "Llenar un Pagaré",
-  "No consignar fechas y otros datos en el pagaré (Ver muestra o consulte con el delegado)",
-  "Datos personales y firma del socio solicitante",
-  "Un garante (socio con más de seis meses de antigüedad en la cooperativa): datos personales y firma del garante.",
-  "Adjuntar copia del carné de Identidad personal y DNI del garante debidamente firmado y las 2 últimas liquidaciones de pago (demostrando liquidez para ser garante).",
-  "Para los préstamos solicitados en Lima el garante tendrá que estar presente en las oficinas."
+  {
+    title: "Requisitos del socio",
+    content: (
+      <ul className="list-disc pl-5 text-lg text-gray-700">
+        <li>Llenar la solicitud de ficha de ingreso</li>
+        <li>
+          Adjuntar copia fotostática del carné de identidad y el DNI
+          (debidamente firmado en la copia).
+        </li>
+        <li>Llenar solicitud de préstamo</li>
+        <li>
+          Adjuntar las dos (2) últimas liquidaciones de haberes del socio
+          prestatario con firma y huella para verificar la liquidez.
+        </li>
+        <li>
+          Adjuntar copia del recibo cancelado de luz, agua o teléfono para
+          verificar que los datos consignados coincidan con la solicitud y el
+          pagaré.
+        </li>
+        <li>
+          Adjuntar fotocopia del carné de identidad personal (CIP) y DNI del
+          socio prestatario.
+        </li>
+        <li>Tener una cuenta de banco a tu nombre.</li>
+        <li>Tener correo electrónico.</li>
+        <li>Llenar un Pagaré</li>
+        <li>
+          No consignar fechas y otros datos en el pagaré (Ver muestra o consulte
+          con el delegado)
+        </li>
+        <li>Datos personales y firma del socio solicitante</li>
+        <li>
+          Un garante (socio con más de seis meses de antigüedad en la
+          cooperativa): datos personales y firma del garante.
+        </li>
+        <li>
+          Adjuntar copia del carné de Identidad personal y DNI del garante
+          debidamente firmado y las 2 últimas liquidaciones de pago (demostrando
+          liquidez para ser garante).
+        </li>
+        <li>
+          Para los préstamos solicitados en Lima el garante tendrá que estar
+          presente en las oficinas.
+        </li>
+      </ul>
+    ),
+  },
 ];
 const navBarItems = [
   {
@@ -71,11 +106,7 @@ const navBarItems = [
 
 export default function SoloFirmaPage() {
   return (
-    <div className="flex flex-col items-center mt-10 w-full px-2 md:px-4">
-      <h1 className="text-4xl font-bold text-black mb-10 text-center">
-        Préstamos promocional
-      </h1>
-
+    <PageComp title="Préstamos promocional">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mb-5">
         <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg w-full">
           <Image
@@ -85,7 +116,7 @@ export default function SoloFirmaPage() {
             alt="Prestamo promocional"
             className="rounded-lg shadow-lg mb-4"
           />
-          <p className="text-lg text-gray-700 mb-4 text-center">
+          <p className="text-md text-gray-700 mb-4 text-justify">
             Ofrecemos préstamos para aquellas personas que desean inscribirse
             como socios en nuestra cooperativa. Estos préstamos son permanentes
             para los nuevos socios que ingresan a la cooperativa y se ofrecen
@@ -94,14 +125,23 @@ export default function SoloFirmaPage() {
             requisitos para inscribirse como socio y gestionar el préstamo
             correspondiente. La tasa de interés mensual es del 2 %, vigente a
             partir del 1 de abril de 2015.
-            <br/>
-            <br/>
-            Préstamo promocional hasta S/ 3000 para ser descontado en 24 meses a una cuota mensual estimada de S/ 160.
+            <br />
+            <br />
+            Préstamo promocional hasta S/ 3000 para ser descontado en 24 meses a
+            una cuota mensual estimada de S/ 160.
           </p>
-          <h2 className="text-2xl font-bold text-black mt-7 mb-4 text-left">
+          <div className="mt-4 w-full">
+            {promocionalItems.map((item, index) => (
+              <PdfButton key={index} href={item.href} text={item.text} />
+            ))}
+          </div>
+        </div>
+
+        <div className="flex flex-col items-start bg-white p-6 rounded-lg shadow-lg w-full">
+          <h2 className="text-2xl font-bold text-green-700 mt-7 mb-4 text-left">
             Nota
           </h2>
-          <ul className="list-none space-y-4 text-lg text-gray-700 text-justify">
+          <ul className="list-none space-y-4 text-md text-gray-700 text-justify">
             <li className="flex items-start">
               <FaCheckCircle className="text-green-500 mt-1 mr-2 flex-shrink-0" />
               <span className="flex-1">
@@ -153,24 +193,14 @@ export default function SoloFirmaPage() {
             </tbody>
           </table>
           <div className="mt-4 w-full">
-            {promocionalItems.map((item, index) => (
-              <PdfButton key={index} href={item.href} text={item.text} />
+            {requirementsSocio.map((section, index) => (
+              <Collapsible
+                key={index}
+                title={section.title}
+                content={section.content}
+              />
             ))}
           </div>
-        </div>
-
-        <div className="flex flex-col items-start bg-white p-6 rounded-lg shadow-lg w-full">
-          <h2 className="text-2xl font-bold text-black mb-4 text-left">
-            Requisitos del socio
-          </h2>
-          <ul className="list-none space-y-4 text-lg text-gray-700 text-justify">
-            {requirementsSocio.map((requirement, index) => (
-              <li key={index} className="flex items-start">
-                <FaCheckCircle className="text-green-500 mt-1 mr-2 flex-shrink-0" />
-                <span className="flex-1">{requirement}</span>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
 
@@ -190,6 +220,6 @@ export default function SoloFirmaPage() {
           ))}
         </div>
       </div>
-    </div>
+    </PageComp>
   );
 }
