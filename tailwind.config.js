@@ -18,16 +18,7 @@ module.exports = {
       '4xl': '2.441rem',
       '5xl': '3.052rem',
     },
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-      gridColumn: {
-        'span-x': '1 / 2',
-      },
-    },
+    extend: {},
   },
-  plugins: [],
+  plugins: [require('tailwind-animation-delay')],
 };

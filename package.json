@@ -9,27 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-google-maps/api": "^2.19.3",
-    "carousel": "^0.0.3",
-    "carrusel": "^1.2.3",
-    "clsx": "^2.1.1",
+    "@react-google-maps/api": "2.19.3",
+    "carousel": "0.0.3",
+    "carrusel": "1.2.3",
+    "clsx": "2.1.1",
     "next": "14.2.5",
-    "react": "^18",
-    "react-bootstrap": "^2.10.4",
-    "react-dom": "^18",
-    "react-icons": "^5.2.1",
+    "react": "18",
+    "react-bootstrap": "2.10.4",
+    "react-dom": "18",
+    "react-icons": "5.2.1",
     "react-responsive-carousel": "^3.2.23",
     "react-slick": "^0.30.2",
+    "react-slideshow-image": "^4.3.1",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^6.1.11",
-    "swiper": "^11.1.5",
-    "tailwind-animation-delay": "^1.0.0",
-    "tailwind-merge": "^2.4.0"
+    "styled-components": "6.1.11",
+    "swiper": "11.1.5",
+    "tailwind-animation-delay": "1.0.0",
+    "tailwind-merge": "2.4.0"
   },
   "devDependencies": {
-    "eslint": "^8",
+    "@types/node": "20.14.12",
+    "@types/react": "18.3.3",
+    "eslint": "8",
     "eslint-config-next": "14.2.5",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "postcss": "8",
+    "tailwindcss": "3.4.1",
+    "typescript": "5.5.4"
   }
 }
