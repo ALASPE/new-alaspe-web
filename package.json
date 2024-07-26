@@ -12,6 +12,7 @@
     "@react-google-maps/api": "^2.19.3",
     "carousel": "^0.0.3",
     "carrusel": "^1.2.3",
+    "clsx": "^2.1.1",
     "next": "14.2.5",
     "react": "^18",
     "react-bootstrap": "^2.10.4",
@@ -21,7 +22,9 @@
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.11",
-    "swiper": "^11.1.5"
+    "swiper": "^11.1.5",
+    "tailwind-animation-delay": "^1.0.0",
+    "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {
     "eslint": "^8",
