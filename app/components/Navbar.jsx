@@ -35,10 +35,10 @@ export default function NavBar() {
             <Link href="/nosotros" legacyBehavior>
               <a className="text-white hover:text-gray-200 transition duration-300">Nosotros</a>
             </Link>
-            <Link href="/asociados" legacyBehavior>
+            <Link href="/asociado" legacyBehavior>
               <a className="text-white hover:text-gray-200 transition duration-300">Asociados</a>
             </Link>
-            <Link href="/comunicados" legacyBehavior>
+            <Link href="/comunicado" legacyBehavior>
               <a className="text-white hover:text-gray-200 transition duration-300">Comunicados</a>
             </Link>
             <Link href="/contacto" legacyBehavior>
