@@ -1,229 +1,98 @@
 "use client";
-import { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import Button from "./BurgerButton.jsx";
-import styled from "styled-components";
-import BurguerButton from "./BurgerButton.jsx";
+import { useState } from 'react';
+import Link from 'next/link';
 
-export default function Navbar() {
-  const [clicked, setClicked] = useState(false);
-
-  const handleClickMenu = () => {
-    setClicked(!clicked);
-  };
+export default function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
-      <div className="w-full h-full static">
-        <div className="flex justify-around items-center px-12 pt-5 pb-5 bg-[#175935]">
-          <Image
+    <header className="bg-gradient-to-r from-green-800 to-green-600 p-4 shadow-lg">
+      <div className="container mx-auto flex items-center justify-between flex-wrap">
+        <div className="flex items-center space-x-4">
+          <img
             src="/logo_alaspe.png"
-            width={100}
-            height={100}
-            alt="Logo Cooperativa"
-            className="hidden lg:block"
+            alt="Logo"
+            className="h-20"
           />
-          <h1 className="text-white font-bold text-lg md:text-3xl text-center">
-            Cooperativa de Servicios Múltiples Alas Peruanas
+          <h1 className="text-white text-xl font-bold">
+            Cooperativa de Alas Peruanas
           </h1>
-          <Link
-            className="hidden lg:flex bg-[#F74E0F] py-1 px-8 text-white rounded-xl border border-white text-xs lg:text-base"
-            href="http://190.12.83.18/portal/ConsulNet/default.aspx"
-          >
-            Acceso a Socios
+        </div>
+        <div className="hidden md:flex space-x-6 items-center flex-grow justify-end">
+          <nav className="flex space-x-6">
+            <Link href="/" legacyBehavior>
+              <a className="text-white hover:text-gray-200 transition duration-300">Inicio</a>
+            </Link>
+            <Link href="/services" legacyBehavior>
+              <a className="text-white hover:text-gray-200 transition duration-300">Servicios</a>
+            </Link>
+            <Link href="/benefits" legacyBehavior>
+              <a className="text-white hover:text-gray-200 transition duration-300">Beneficios</a>
+            </Link>
+            <Link href="/agreements" legacyBehavior>
+              <a className="text-white hover:text-gray-200 transition duration-300">Convenios</a>
+            </Link>
+            <Link href="/about" legacyBehavior>
+              <a className="text-white hover:text-gray-200 transition duration-300">Nosotros</a>
+            </Link>
+            <Link href="/associates" legacyBehavior>
+              <a className="text-white hover:text-gray-200 transition duration-300">Asociados</a>
+            </Link>
+            <Link href="/announcements" legacyBehavior>
+              <a className="text-white hover:text-gray-200 transition duration-300">Comunicados</a>
+            </Link>
+            <Link href="/contact" legacyBehavior>
+              <a className="text-white hover:text-gray-200 transition duration-300">Contacto</a>
+            </Link>
+          </nav>
+          <Link href="/login" legacyBehavior>
+            <a className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-500 transition duration-300">Intranet</a>
           </Link>
         </div>
-        <div className="bg-[#209F63]">
-          <ul className="hidden lg:flex pl-8 text-white text-sm">
-            <Link className="py-3 px-5 hover:bg-[#0284c7]" href="/">
-              Inicio
-            </Link>
-            <Link className="py-3 px-5 hover:bg-[#0284c7]" href="/servicios">
-              Servicios
-            </Link>
-            <Link className="py-3 px-5 hover:bg-[#0284c7]" href="/beneficios">
-              Beneficios
-            </Link>
-            <Link className="py-3 px-5 hover:bg-[#0284c7]" href="/convenios">
-              Convenios
-            </Link>
-            <Link className="py-3 px-5 hover:bg-[#0284c7]" href="/nosotros">
-              Nosotros
-            </Link>
-            <Link className="py-3 px-5 hover:bg-[#0284c7]" href="/asociado">
-              Asociado
-            </Link>
-            <Link className="py-3 px-5 hover:bg-[#0284c7]" href="/comunicado">
-              Comunicados
-            </Link>
-            <Link className="py-3 px-5 hover:bg-[#0284c7]" href="/contacto">
-              Contacto
-            </Link>
-          </ul>
-          <div className="flex flex-row lg:hidden">
-            <NavContainer>
-              <div className={`links ${clicked ? "active" : ""}`}>
-                <Link onClick={handleClickMenu} className="py-3 px-5" href="/">
-                  Inicio
-                </Link>
-                <Link
-                  onClick={handleClickMenu}
-                  className="py-3 px-5"
-                  href="/servicios"
-                >
-                  Servicios
-                </Link>
-                <Link
-                  onClick={handleClickMenu}
-                  className="py-3 px-5"
-                  href="/beneficios"
-                >
-                  Beneficios
-                </Link>
-                <Link
-                  onClick={handleClickMenu}
-                  className="py-3 px-5"
-                  href="/convenios"
-                >
-                  Convenios
-                </Link>
-                <Link
-                  onClick={handleClickMenu}
-                  className="py-3 px-5"
-                  href="/nosotros"
-                >
-                  Nosotros
-                </Link>
-                <Link
-                  onClick={handleClickMenu}
-                  className="py-3 px-5"
-                  href="/asociado"
-                >
-                  Asociado
-                </Link>
-                <Link
-                  onClick={handleClickMenu}
-                  className="py-3 px-5"
-                  href="/comunicado"
-                >
-                  Comunicados
-                </Link>
-                <Link
-                  onClick={handleClickMenu}
-                  className="py-3 px-5"
-                  href="/contacto"
-                >
-                  Contacto
-                </Link>
-                <Link
-                  className="py-3 px-5 text-1xs"
-                  href="http://190.12.83.18/portal/ConsulNet/default.aspx"
-                >
-                  Acceso a Socios
-                </Link>
-              </div>
-              
-                <div className="burguer">
-                <BurguerButton
-                  clicked={clicked}
-                  handleClick={handleClickMenu}
-                />
-                </div>
-                
-              <BgDiv className={`initial ${clicked ? " active" : ""}`}></BgDiv>
-            </NavContainer>
-          </div>
+        <div className="md:hidden flex items-center ml-auto">
+          <Link href="/login" legacyBehavior>
+            <a className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-500 transition duration-300 mr-4">Intranet</a>
+          </Link>
+          <button
+            className="text-white"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
         </div>
       </div>
-    </>
+      {isOpen && (
+        <div className="md:hidden">
+          <nav className="bg-green-700 p-4">
+            <Link href="/" legacyBehavior>
+              <a className="block text-white hover:text-gray-200 py-2 transition duration-300">Inicio</a>
+            </Link>
+            <Link href="/services" legacyBehavior>
+              <a className="block text-white hover:text-gray-200 py-2 transition duration-300">Servicios</a>
+            </Link>
+            <Link href="/benefits" legacyBehavior>
+              <a className="block text-white hover:text-gray-200 py-2 transition duration-300">Beneficios</a>
+            </Link>
+            <Link href="/agreements" legacyBehavior>
+              <a className="block text-white hover:text-gray-200 py-2 transition duration-300">Convenios</a>
+            </Link>
+            <Link href="/about" legacyBehavior>
+              <a className="block text-white hover:text-gray-200 py-2 transition duration-300">Nosotros</a>
+            </Link>
+            <Link href="/associates" legacyBehavior>
+              <a className="block text-white hover:text-gray-200 py-2 transition duration-300">Asociados</a>
+            </Link>
+            <Link href="/announcements" legacyBehavior>
+              <a className="block text-white hover:text-gray-200 py-2 transition duration-300">Comunicados</a>
+            </Link>
+            <Link href="/contact" legacyBehavior>
+              <a className="block text-white hover:text-gray-200 py-2 transition duration-300">Contacto</a>
+            </Link>
+          </nav>
+        </div>
+      )}
+    </header>
   );
 }
-
-const NavContainer = styled.nav`
-  h2 {
-    color: white;
-    font-weight: 400;
-    span {
-      font-weight: bold;
-    }
-  }
-  padding: 0.4rem;
-  background-color: #209f63;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  a {
-    color: white;
-    text-decoration: none;
-    margin-right: 1rem;
-  }
-  .links {
-    position: absolute;
-    top: -700px;
-    left: -2000px;
-    right: 0;
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    transition: all 1s ease;
-    a {
-      color: white;
-      font-size: 2rem;
-      display: block;
-    }
-    @media (min-width: 1024px) {
-      position: initial;
-      margin: 0;
-      a {
-        font-size: 1rem;
-        color: white;
-        display: inline;
-      }
-      display: block;
-    }
-  }
-  .links.active {
-    width: 100%;
-    display: block;
-    position: fixed;
-    margin-left: auto;
-    margin-right: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 1000;
-    a {
-      font-size: 1.5rem;
-      margin-top: 0.5rem;
-      color: white;
-    }
-  }
-  .burguer {
-    z-index: 1100; /* Asegura que el botón esté por encima del navbar */
-    @media (min-width: 1024px) {
-      display: none;
-    }
-  }
-`;
-
-const BgDiv = styled.div`
-  background-color: #209f63;
-  position: fixed;
-  top: -1000px;
-  left: -1000px;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-  transition: all 1s ease;
-
-  &.active {
-    border-radius: 0 0 0 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-`;
