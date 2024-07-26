@@ -1,5 +1,6 @@
 import React from "react";
 import ImageSlider from "./components/Slider";
+import Popup from "./components/Popup";
 
 const images = [
   "/slider/Slider1@10x.png",
@@ -18,7 +19,8 @@ const images = [
 export default function HomePage() {
   return (
     <>
-      <ImageSlider images={images}/>
+      <Popup />
+      <ImageSlider images={images} />
     </>
   );
 }
