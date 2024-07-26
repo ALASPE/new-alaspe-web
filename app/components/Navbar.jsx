@@ -23,25 +23,25 @@ export default function NavBar() {
             <Link href="/" legacyBehavior>
               <a className="text-white hover:text-gray-200 transition duration-300">Inicio</a>
             </Link>
-            <Link href="/services" legacyBehavior>
+            <Link href="/servicios" legacyBehavior>
               <a className="text-white hover:text-gray-200 transition duration-300">Servicios</a>
             </Link>
-            <Link href="/benefits" legacyBehavior>
+            <Link href="/beneficios" legacyBehavior>
               <a className="text-white hover:text-gray-200 transition duration-300">Beneficios</a>
             </Link>
-            <Link href="/agreements" legacyBehavior>
+            <Link href="/convenios" legacyBehavior>
               <a className="text-white hover:text-gray-200 transition duration-300">Convenios</a>
             </Link>
-            <Link href="/about" legacyBehavior>
+            <Link href="/nosotros" legacyBehavior>
               <a className="text-white hover:text-gray-200 transition duration-300">Nosotros</a>
             </Link>
-            <Link href="/associates" legacyBehavior>
+            <Link href="/asociados" legacyBehavior>
               <a className="text-white hover:text-gray-200 transition duration-300">Asociados</a>
             </Link>
-            <Link href="/announcements" legacyBehavior>
+            <Link href="/comunicados" legacyBehavior>
               <a className="text-white hover:text-gray-200 transition duration-300">Comunicados</a>
             </Link>
-            <Link href="/contact" legacyBehavior>
+            <Link href="/contacto" legacyBehavior>
               <a className="text-white hover:text-gray-200 transition duration-300">Contacto</a>
             </Link>
           </nav>
@@ -69,25 +69,25 @@ export default function NavBar() {
             <Link href="/" legacyBehavior>
               <a className="block text-white hover:text-gray-200 py-2 transition duration-300">Inicio</a>
             </Link>
-            <Link href="/services" legacyBehavior>
+            <Link href="/servicios" legacyBehavior>
               <a className="block text-white hover:text-gray-200 py-2 transition duration-300">Servicios</a>
             </Link>
-            <Link href="/benefits" legacyBehavior>
+            <Link href="/beneficios" legacyBehavior>
               <a className="block text-white hover:text-gray-200 py-2 transition duration-300">Beneficios</a>
             </Link>
-            <Link href="/agreements" legacyBehavior>
+            <Link href="/convenios" legacyBehavior>
               <a className="block text-white hover:text-gray-200 py-2 transition duration-300">Convenios</a>
             </Link>
-            <Link href="/about" legacyBehavior>
+            <Link href="/nosotros" legacyBehavior>
               <a className="block text-white hover:text-gray-200 py-2 transition duration-300">Nosotros</a>
             </Link>
-            <Link href="/associates" legacyBehavior>
+            <Link href="/asociados" legacyBehavior>
               <a className="block text-white hover:text-gray-200 py-2 transition duration-300">Asociados</a>
             </Link>
-            <Link href="/announcements" legacyBehavior>
+            <Link href="/comunicados" legacyBehavior>
               <a className="block text-white hover:text-gray-200 py-2 transition duration-300">Comunicados</a>
             </Link>
-            <Link href="/contact" legacyBehavior>
+            <Link href="/contacto" legacyBehavior>
               <a className="block text-white hover:text-gray-200 py-2 transition duration-300">Contacto</a>
             </Link>
           </nav>
