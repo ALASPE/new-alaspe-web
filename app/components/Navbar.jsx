@@ -45,12 +45,12 @@ export default function NavBar() {
               <a className="text-white hover:text-gray-200 transition duration-300">Contacto</a>
             </Link>
           </nav>
-          <Link href="/login" legacyBehavior>
+          <Link href="http://190.12.83.18/portal/ConsulNet/default.aspx" legacyBehavior>
             <a className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-500 transition duration-300">Intranet</a>
           </Link>
         </div>
         <div className="md:hidden flex items-center ml-auto">
-          <Link href="/login" legacyBehavior>
+          <Link href="http://190.12.83.18/portal/ConsulNet/default.aspx" legacyBehavior>
             <a className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-500 transition duration-300 mr-4">Intranet</a>
           </Link>
           <button
