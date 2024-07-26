@@ -22,7 +22,7 @@ export default function HomePage() {
   return (
     <>
       <Popup />
-      <div className="mx-12">
+      <div className="lg:mx-12">
         <SwiperCarousel images={images} w="2500" h={600} />
         <PageComp title="Nuestros Servicios, Beneficios y Convenios">
           <NavBarItem

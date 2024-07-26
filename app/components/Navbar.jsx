@@ -28,7 +28,7 @@ export default function Navbar() {
             Cooperativa de Servicios Múltiples Alas Peruanas
           </h1>
           <Link
-            className="hidden lg:flex bg-[#F74E0F] py-1 px-8 text-white rounded-xl border border-white"
+            className="hidden lg:flex bg-[#F74E0F] py-1 px-8 text-white rounded-xl border border-white text-xs lg:text-base"
             href="http://190.12.83.18/portal/ConsulNet/default.aspx"
           >
             Acceso a Socios
@@ -67,34 +67,70 @@ export default function Navbar() {
                 <Link onClick={handleClickMenu} className="py-3 px-5" href="/">
                   Inicio
                 </Link>
-                <Link onClick={handleClickMenu} className="py-3 px-5" href="/servicios">
+                <Link
+                  onClick={handleClickMenu}
+                  className="py-3 px-5"
+                  href="/servicios"
+                >
                   Servicios
                 </Link>
-                <Link onClick={handleClickMenu} className="py-3 px-5" href="/beneficios">
+                <Link
+                  onClick={handleClickMenu}
+                  className="py-3 px-5"
+                  href="/beneficios"
+                >
                   Beneficios
                 </Link>
-                <Link onClick={handleClickMenu} className="py-3 px-5" href="/convenios">
+                <Link
+                  onClick={handleClickMenu}
+                  className="py-3 px-5"
+                  href="/convenios"
+                >
                   Convenios
                 </Link>
-                <Link onClick={handleClickMenu} className="py-3 px-5" href="/nosotros">
+                <Link
+                  onClick={handleClickMenu}
+                  className="py-3 px-5"
+                  href="/nosotros"
+                >
                   Nosotros
                 </Link>
-                <Link onClick={handleClickMenu} className="py-3 px-5" href="/asociado">
+                <Link
+                  onClick={handleClickMenu}
+                  className="py-3 px-5"
+                  href="/asociado"
+                >
                   Asociado
                 </Link>
-                <Link onClick={handleClickMenu} className="py-3 px-5" href="/comunicado">
+                <Link
+                  onClick={handleClickMenu}
+                  className="py-3 px-5"
+                  href="/comunicado"
+                >
                   Comunicados
                 </Link>
-                <Link onClick={handleClickMenu} className="py-3 px-5" href="/contacto">
+                <Link
+                  onClick={handleClickMenu}
+                  className="py-3 px-5"
+                  href="/contacto"
+                >
                   Contacto
                 </Link>
+                <Link
+                  className="py-3 px-5 text-1xs"
+                  href="http://190.12.83.18/portal/ConsulNet/default.aspx"
+                >
+                  Acceso a Socios
+                </Link>
               </div>
-              <div className="burguer">
+              
+                <div className="burguer">
                 <BurguerButton
                   clicked={clicked}
                   handleClick={handleClickMenu}
                 />
-              </div>
+                </div>
+                
               <BgDiv className={`initial ${clicked ? " active" : ""}`}></BgDiv>
             </NavContainer>
           </div>
@@ -105,42 +141,42 @@ export default function Navbar() {
 }
 
 const NavContainer = styled.nav`
-  h2{
+  h2 {
     color: white;
     font-weight: 400;
-    span{
+    span {
       font-weight: bold;
     }
   }
-  padding: .4rem;
-  background-color: #209F63;
+  padding: 0.4rem;
+  background-color: #209f63;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  a{
+  a {
     color: white;
     text-decoration: none;
     margin-right: 1rem;
   }
-  .links{
+  .links {
     position: absolute;
     top: -700px;
     left: -2000px;
     right: 0;
-    margin-top:10%;
+    margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     transition: all 1s ease;
-    a{
+    a {
       color: white;
       font-size: 2rem;
       display: block;
     }
-    @media(min-width: 1024px){
+    @media (min-width: 1024px) {
       position: initial;
       margin: 0;
-      a{
+      a {
         font-size: 1rem;
         color: white;
         display: inline;
@@ -148,7 +184,7 @@ const NavContainer = styled.nav`
       display: block;
     }
   }
-  .links.active{
+  .links.active {
     width: 100%;
     display: block;
     position: fixed;
@@ -159,22 +195,22 @@ const NavContainer = styled.nav`
     right: 0;
     text-align: center;
     z-index: 1000;
-    a{
+    a {
       font-size: 1.5rem;
       margin-top: 0.5rem;
       color: white;
     }
   }
-  .burguer{
+  .burguer {
     z-index: 1100; /* Asegura que el botón esté por encima del navbar */
-    @media(min-width: 1024px){
+    @media (min-width: 1024px) {
       display: none;
     }
   }
 `;
 
 const BgDiv = styled.div`
-  background-color: #209F63;
+  background-color: #209f63;
   position: fixed;
   top: -1000px;
   left: -1000px;
