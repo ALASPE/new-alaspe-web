@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <>
-      <div className="bg-[#0F333E] text-white text-sm flex flex-col justify-center items-center gap-4 pb-5 mt-28">
+      <div className="bg-gradient-to-r from-green-800 to-green-600 text-white text-sm flex flex-col justify-center items-center gap-4 pb-5 mt-28">
         <div className="flex flex-wrap flex-row gap-10 lg:gap-24 align-center justify-center w-full">
           <FooterItem title="Instituciones de Interes">
             <ul className="flex gap-3 flex-col">
@@ -36,7 +36,7 @@ export default function Footer() {
           </FooterItem>
         </div>
         <div className="bg-[#209F63] py-2 px-5 my-5">
-          2020 Cooperativa de Servicios Múltiples Alas Peruanas | Todos los
+          2024 Cooperativa de Servicios Múltiples Alas Peruanas ® | Todos los
           derechos reservados
         </div>
       </div>
