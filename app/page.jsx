@@ -20,7 +20,9 @@ export default function HomePage() {
   return (
     <>
       <Popup />
-      <ImageSlider images={images} />
+      <div className="flex flex-col items-center">
+        <ImageSlider images={images} interval={3000} />
+      </div>
     </>
   );
 }

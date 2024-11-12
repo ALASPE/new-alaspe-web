@@ -1,98 +1,69 @@
 'use client'
-// components/Slider.js
+import Image from "next/image";
+import { useState, useEffect } from "react";
 
-import React, { useState, useEffect, useRef } from 'react';
-import Image from 'next/image';
-import styles from './Slider.module.css';
-
-const Slider = ({ images, interval = 5000 }) => {
+const Slider = ({ images, interval = 3000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const sliderRef = useRef(null);
 
-  // Cambia a la siguiente imagen después de un intervalo de tiempo
+  const goToPrevious = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      goToNext();
     }, interval);
 
-    return () => clearInterval(timer); // Limpia el intervalo al desmontar
-  }, [images.length, interval]);
-
-  // Deslizar con touch
-  const touchStartX = useRef(0);
-  const touchEndX = useRef(0);
-
-  const handleTouchStart = (e) => {
-    touchStartX.current = e.changedTouches[0].screenX;
-  };
-
-  const handleTouchEnd = (e) => {
-    touchEndX.current = e.changedTouches[0].screenX;
-    handleSwipe();
-  };
-
-  const handleSwipe = () => {
-    const deltaX = touchEndX.current - touchStartX.current;
-    if (deltaX > 50) {
-      // Deslizar hacia la derecha
-      setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-    } else if (deltaX < -50) {
-      // Deslizar hacia la izquierda
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }
-  };
-
-  // Controlador de evento para cambiar imagen con botones
-  const goToPrevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
-
-  const goToNextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+    return () => clearInterval(timer);
+  }, [interval]);
 
   return (
-    <div
-      className={styles.slider}
-      ref={sliderRef}
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
-    >
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className={`${styles.slide} ${index === currentIndex ? styles.active : ''}`}
-        >
-          {index === currentIndex && (
+    <div className="relative w-full overflow-hidden">
+      <div
+        className="flex transition-transform duration-700 ease-in-out"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {images.map((src, index) => (
+          <div key={index} className="w-full flex-shrink-0">
             <Image
-              src={image}
-              alt={`Slide ${index + 1}`}
-              width={2400}
-              height={100}
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
-              style={{ objectFit: 'cover' }}
-              priority={index === 0}
-              placeholder="blur"
-              blurDataURL={image}
+              src={src}
+              width={2000}
+              height={400}
+              alt={`Slide ${index}`}
+              className="w-full h-auto object-cover"
             />
-          )}
-        </div>
-      ))}
-
-      <button className={styles.prev} onClick={goToPrevSlide}>
-        &#10094;
+          </div>
+        ))}
+      </div>
+      <button
+        onClick={goToPrevious}
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-2xl sm:text-3xl text-gray-600 hover:text-gray-800 z-10"
+      >
+        ◀
       </button>
-      <button className={styles.next} onClick={goToNextSlide}>
-        &#10095;
+      <button
+        onClick={goToNext}
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-2xl sm:text-3xl text-gray-600 hover:text-gray-800 z-10"
+      >
+        ▶
       </button>
-
-      <div className= {styles.dots}>
+      <div className="flex justify-center mt-4 space-x-2">
         {images.map((_, index) => (
           <span
             key={index}
-            className={`${styles.dot} ${index === currentIndex ? styles.activeDot : ''}`}
+            className={`h-2 w-2 rounded-full cursor-pointer ${
+              index === currentIndex ? "bg-gray-800" : "bg-gray-400"
+            }`}
             onClick={() => setCurrentIndex(index)}
-          />
+          ></span>
         ))}
       </div>
     </div>
